@@ -1,13 +1,20 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
-  bottom: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+/* ── CSS CUSTOM PROPERTIES (variables) ── */
+:root {
+  --header-height: clamp(380px, 55vw, 600px);
+  --center-top: 50%;
+  --center-left: 50%;
 }
 
 header {
   position: relative;
-
-  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +22,8 @@ header {
 
 .background {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: var(--center-top);
+  left: var(--center-left);
   transform: translate(-50%, 0%);
   z-index: 1;
 }
@@ -24,51 +31,51 @@ header {
 .tablet {
   position: absolute;
   z-index: 2;
-  top: 50%;
-  left: 50%;
+  top: var(--center-top);
+  left: var(--center-left);
   transform: translate(-75%, 40%);
 }
 
 .computer-screen {
   position: absolute;
   z-index: 3;
-  top: 50%;
-  left: 50%;
+  top: var(--center-top);
+  left: var(--center-left);
   transform: translate(-25%, 15%);
 }
 
 .grafic {
   position: absolute;
   z-index: 4;
-  top: 50%;
-  left: 50%;
+  top: var(--center-top);
+  left: var(--center-left);
   transform: translate(73%, 33%);
 }
 
-.white-background{
+.white-background {
   background-color: white;
   width: 70px;
   height: 70px;
 
   position: absolute;
   z-index: 4;
-  top: 50%;
-  left: 50%;
+  top: var(--center-top);
+  left: var(--center-left);
   transform: translate(90%, 177%);
 }
 
-.ellipse{
+.ellipse {
   position: absolute;
   z-index: 5;
-  top: 50%;
-  left: 50%;
+  top: var(--center-top);
+  left: var(--center-left);
   transform: translate(143%, 260%);
 }
 
-.number{
+.number {
   position: absolute;
   z-index: 6;
-  top: 50%;
-  left: 50%;
+  top: var(--center-top);
+  left: var(--center-left);
   transform: translate(461%, 1170%);
 }
