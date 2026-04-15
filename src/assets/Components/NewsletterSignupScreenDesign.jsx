@@ -6,7 +6,7 @@ import Ellipse from "../img/ellipse.png"
 import Number from "../img/number.png"
 import "../../App"
 
-export default function NewsletterSignupScreen() {
+export default function NewsletterSignupScreenDesign() {
   return (
     <>
       <header>

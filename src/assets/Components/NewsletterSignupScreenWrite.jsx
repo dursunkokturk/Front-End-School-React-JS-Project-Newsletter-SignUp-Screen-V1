@@ -1,7 +1,7 @@
 import Oval from "../img/oval.png"
 import "../../App"
 
-export default function NewsletterSignupScreenWrite() {
+export default function NewsletterSignupScreenWrite({ setSubscription }) {
   return (
     <main>
       <h1>Gelişmeleri takip edin!</h1>
@@ -21,7 +21,9 @@ export default function NewsletterSignupScreenWrite() {
       <div className="email">
         <p>E-posta adresi</p>
         <input type="email" name="" id="" />
-        <button>Aylık bültene abone olun</button>
+        <button onClick={() => setSubscription(true)}>
+          Aylık bültene abone olun
+        </button>
       </div>
     </main>
   )

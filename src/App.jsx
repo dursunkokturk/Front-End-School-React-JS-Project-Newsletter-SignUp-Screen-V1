@@ -1,13 +1,25 @@
-import NewsletterSignupScreen from "./assets/Components/NewsletterSignupScreenDesign";
-import "../src/App.css"
+import NewsletterSignupScreenDesign from "./assets/Components/NewsletterSignupScreenDesign";
 import NewsletterSignupScreenWrite from "./assets/Components/NewsletterSignupScreenWrite";
+import "../src/App.css"
+import { useState } from "react";
+import NewsletterSignupScreenSuccess from "./assets/Components/NewsletterSignupScreenSuccess";
 
 export default function App() {
 
+  const [subscription, setSubscription] = useState(false);
+
+  if (subscription) {
+    return (
+      <>
+        <NewsletterSignupScreenSuccess />
+      </>
+    )
+  }
+
   return (
     <>
-    <NewsletterSignupScreen />
-    <NewsletterSignupScreenWrite />
+      <NewsletterSignupScreenDesign setSubscription={setSubscription}/>
+      <NewsletterSignupScreenWrite setSubscription={setSubscription}/>
     </>
   )
 }
