@@ -164,18 +164,48 @@ main h4 {
 
 .check-and-oval {
   position: relative;
+  /* height: 200px; */
+  margin-top: 149px;
+  margin-bottom: 40px;
 }
 
 .check-and-oval .oval-big {
   position: absolute;
-  z-index: 1;
-  margin-top: 149px;
-  margin-left: 24px;
+  top: 0;
+  left: 24px;
 }
 
-.check-and-oval .check-big{
+.check-and-oval .check-big {
   position: absolute;
-  z-index: 2;
-  margin-top: 170px;
-  margin-left: 42px;
+  z-index: 1;
+  top: 20px;
+  left: 42px;
+}
+
+.title-and-write {
+  position: absolute;
+  z-index: 1;
+  margin-top: 100px;
+  margin-inline: 24px;
+}
+.title-and-write h1 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.title-and-write h4 {
+  font-weight: 400;
+  margin-bottom: 263px;
+}
+
+.title-and-write button{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 99px;
+  background-color: #242742;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 40px;
 }
