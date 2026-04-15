@@ -144,7 +144,7 @@ main h4 {
   margin-bottom: 8px;
 }
 
-.email input{
+.email input {
   width: 327px;
   height: 56px;
   font-size: 18px;
@@ -153,11 +153,29 @@ main h4 {
   margin-bottom: 24px;
 }
 
-.email button{
+.email button {
   font-size: 16px;
   font-weight: 700;
   color: white;
   background-color: #242742;
   padding: 10px 67px;
   margin-bottom: 40px;
+}
+
+.check-and-oval {
+  position: relative;
+}
+
+.check-and-oval .oval-big {
+  position: absolute;
+  z-index: 1;
+  margin-top: 149px;
+  margin-left: 24px;
+}
+
+.check-and-oval .check-big{
+  position: absolute;
+  z-index: 2;
+  margin-top: 170px;
+  margin-left: 42px;
 }
