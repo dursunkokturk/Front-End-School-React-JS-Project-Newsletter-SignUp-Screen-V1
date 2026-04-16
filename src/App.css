@@ -93,7 +93,7 @@ main {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 16px;
   /* margin-top: 40px; */
@@ -117,17 +117,20 @@ main h4 {
 
 .check-and-write {
   display: flex;
-  flex-direction: row;
-  margin-inline: 24px;
+  align-items: flex-start;
+  width: 100%;
+  padding-inline: 24px;
 }
 
 .check-and-write img {
   width: 21px;
   height: 21px;
+  flex-shrink: 0;
 }
 
 .check-and-write p {
   margin-left: 16px;
+  flex: 1;
 }
 
 .check-and-write .oval {
@@ -135,9 +138,9 @@ main h4 {
   margin-left: 0px;
 }
 
-.third {
+/* .third {
   margin-right: 177px;
-}
+} */
 
 .email {
   margin-top: 40px;
@@ -149,7 +152,7 @@ main h4 {
 }
 
 .email input {
-  width: 327px;
+  width: 312px;
   height: 56px;
   font-size: 18px;
   border: 1px solid grey;
@@ -162,7 +165,7 @@ main h4 {
   font-weight: 700;
   color: white;
   background-color: #242742;
-  padding: 10px 67px;
+  padding: 14px 59px;
   margin-bottom: 40px;
 }
 

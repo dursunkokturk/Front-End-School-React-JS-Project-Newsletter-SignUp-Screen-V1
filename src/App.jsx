@@ -1,8 +1,7 @@
-import NewsletterSignupScreenDesign from "./assets/Components/NewsletterSignupScreenDesign";
-import NewsletterSignupScreenWrite from "./assets/Components/NewsletterSignupScreenWrite";
-import "../src/App.css"
-import { useState } from "react";
+import NewsletterSignupScreen from "./assets/Components/NewsletterSignupScreen";
 import NewsletterSignupScreenSuccess from "./assets/Components/NewsletterSignupScreenSuccess";
+import { useState } from "react";
+import "../src/App.css"
 
 export default function App() {
 
@@ -18,8 +17,7 @@ export default function App() {
 
   return (
     <>
-      <NewsletterSignupScreenDesign setSubscription={setSubscription}/>
-      <NewsletterSignupScreenWrite setSubscription={setSubscription}/>
+      <NewsletterSignupScreen setSubscription={setSubscription}/>
     </>
   )
 }
