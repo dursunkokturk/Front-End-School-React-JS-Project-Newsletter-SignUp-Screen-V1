@@ -232,6 +232,8 @@ main h4 {
     width: 928px;
     height: 641px;
     border-radius: 36px;
+    margin-inline: auto;
+    height: 100vh;
   }
 
   .background {
@@ -327,4 +329,9 @@ main h4 {
     transform: translate(180px, -34px);
   }
   
+  main{
+    display: flex;
+    height: 370px;
+    margin-left: 17px;
+  }
 }
