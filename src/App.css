@@ -254,15 +254,28 @@ main h4 {
 
 @media(min-width:1109px) {
 
+  body{
+    background-color: #36384D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
   .header-and-main {
     display: flex;
     flex-direction: row-reverse;
     background-color: white;
     width: 928px;
-    /* height: 100vh; */
-    /* height: 641px; */
+    height: 641px;
     border-radius: 36px;
-    margin: 0 auto;
+    margin: 20px auto;
+  }
+
+  header{
+    /* height: 641px; */
+    overflow: visible;
   }
 
   .background {
